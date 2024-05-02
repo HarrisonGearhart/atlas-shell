@@ -1,2 +1,2 @@
-chmod u+x 2-bring_me_home
+#1/bin/bash
 cd .. 
