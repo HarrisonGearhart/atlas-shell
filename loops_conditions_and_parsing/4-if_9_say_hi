@@ -2,8 +2,7 @@
 #Display Best School 10 times, but the 9th displays Best School and Hi on a new line
 count=0
 while [ $count -lt 10 ]
-do 
-echo "Best School"
+do
 if [ $count -eq 9 ]
 then echo "Hi"
 fi 
