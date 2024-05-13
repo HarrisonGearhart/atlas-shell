@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#Print Best School 10 times, but replace the 4th line with bad luck and 8th line with good luck
+count=0
+
+while [ $count -lt 10 ]
+do
+  if [ $count -eq 4 ]
+   then echo "bad luck"
+  elif [ $count -eq 8 ]
+   then echo "good luck"
+  else echo "Best School"
+  fi
+  (( count++ ))
+done
