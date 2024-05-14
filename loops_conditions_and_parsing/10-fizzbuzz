@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#Print 1-100 but replaces multiples of 3 with Fizz, multiples of 5 with Buzz. Multiples of3 and 5 get replaced with FizzBuzz
+for num in {1..100}
+do
+if (( num % 3 == 0 && num % 5 == 0 ))
+then
+echo "FizzBuzz"
+elif (( num % 3 == 0 ))
+then
+echo "Fizz"
+elif (( num % 5 == 0 ))
+then
+echo "Buzz"
+else 
+echo "$num" 
+fi
+done
