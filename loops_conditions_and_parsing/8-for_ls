@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#Display content of current directory in list format, but only display the part of the name after the dash. Dont display hidden files
+folders=$(ls)
+for i in $folders
+do
+echo "$i" | cut -d '-' -f2
+done
